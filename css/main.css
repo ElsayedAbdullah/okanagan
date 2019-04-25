@@ -88,6 +88,28 @@ h4 {
   color: #ffffff;
 }
 
+.about .mission h5, .about .philosophy .boxes .box p, .specturm h5, .about-features .features .feat p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #51403b;
+  opacity: 0.5;
+}
+
+.about .mission h2, .about .philosophy h4, .about .philosophy .boxes .box h3, .specturm h3, .specturm .specs .spec .number, .specturm .specs .spec .value, .about-features .features .feat h3 {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #51403b;
+  opacity: 0.7;
+}
+
 /* Start Header */
 header {
   overflow: hidden;
@@ -1000,5 +1022,211 @@ footer .footer-image {
 }
 
 /* End Footer */
+/* Start About Page */
+/* Start About */
+.about {
+  background-color: #e3e8da;
+  padding-top: 110px;
+}
+.about h1 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #51403b;
+  opacity: 0.7;
+  margin: 0 0 110px;
+}
+.about .images {
+  width: 1420px;
+  height: 716px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "one two two three";
+  grid-gap: 20px;
+}
+.about .images .img.one {
+  grid-area: one;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about .images .img.two {
+  grid-area: two;
+}
+.about .images .img.two .upper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.about .images .img.two .lower {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.about .images .img.three {
+  grid-area: three;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.about .mission {
+  width: 770px;
+  height: 181px;
+  border: 1px solid #c3c4b9;
+  margin: 130px auto 0;
+  position: relative;
+}
+.about .mission img {
+  position: absolute;
+  top: -32px;
+  left: 301px;
+  background-color: #e3e8da;
+  padding: 0px 45px;
+}
+.about .mission h5 {
+  letter-spacing: 5px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+.about .philosophy {
+  width: 930px;
+  padding: 80px 0 144px;
+  margin: auto;
+}
+.about .philosophy h4 {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 64px;
+}
+.about .philosophy .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.about .philosophy .boxes .box {
+  width: 285px;
+}
+.about .philosophy .boxes .box h3 {
+  font-size: 24px;
+  line-height: 24px;
+  opacity: 1;
+  margin: 36px 0 22px;
+}
+.about .philosophy .boxes .box p {
+  width: 241px;
+  line-height: 28px;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+/* End About */
+/* Start Spectrum */
+.specturm {
+  background-image: url(../imgs/tablewbrown.png);
+  background-size: cover;
+  height: 1185px;
+  position: relative;
+}
+.specturm h5 {
+  padding-top: 150px;
+  margin-bottom: 0;
+  letter-spacing: 5px;
+  color: #fefef4;
+  opacity: 0.7;
+}
+.specturm h3 {
+  width: 770px;
+  margin: 29px auto;
+  font-size: 36px;
+  line-height: 46px;
+  color: #fefef4;
+}
+.specturm .specs {
+  width: 903px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.specturm .specs .spec {
+  width: 288px;
+}
+.specturm .specs .spec .number {
+  display: inline-block;
+  margin-right: 24px;
+  background-color: #a9b090;
+  width: 65px;
+  height: 65px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 65px;
+  text-align: center;
+  opacity: 1;
+}
+.specturm .specs .spec .value {
+  font-size: 24px;
+  line-height: 24px;
+  color: #51403b;
+  opacity: 1;
+}
+.specturm img {
+  position: absolute;
+  bottom: 80px;
+  z-index: 1;
+  left: 32%;
+}
+
+/* End Spectrum */
+/* Start Features */
+.about-features {
+  background-color: #ebeddf;
+  padding: 200px 0;
+}
+.about-features .features {
+  width: 1160px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px 147px;
+}
+.about-features .features .feat.one, .about-features .features .feat.two, .about-features .features .feat.three {
+  padding: 170px 0;
+}
+.about-features .features .feat h3 {
+  margin: 0 0 46px;
+}
+.about-features .features .feat p {
+  width: 418px;
+  margin: 0 0 46px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+.about-features .features .feat a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #79862f;
+  position: relative;
+}
+.about-features .features .feat a:after {
+  content: "";
+  width: 103px;
+  height: 1px;
+  background-color: #79862f;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+/* End Features */
 
 /*# sourceMappingURL=main.css.map */
