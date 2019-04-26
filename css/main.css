@@ -88,7 +88,9 @@ h4 {
   color: #ffffff;
 }
 
-.live-organic .live-content .list-content .content-one .live-info p, .top-products .products .product .cart a, .love-us .features .feat p, .full-spectrum .benefits .benefit .table .row .cell p, .testimonials .testimonials-content h4, .testimonials .testimonials-content .carousel-item .carousel-caption p, .popular-articles .articles .article a, .wholesale .left-content .owner h4, .wholesale .left-content .owner p, footer .footer-content .newsletter .get-latest h5, .about .mission h5, .about .philosophy .boxes .box p, .specturm h5, .about-features .features .feat p, .about-features .features .feat a {
+.live-organic .live-content .list-content .content-one .live-info p, .top-products .products .product .cart a, .love-us .features .feat p, .full-spectrum .benefits .benefit .table .row .cell p, .testimonials .testimonials-content h4, .testimonials .testimonials-content .carousel-item .carousel-caption p, .popular-articles .articles .article a, .wholesale .left-content .owner h4, .wholesale .left-content .owner p, footer .footer-content .newsletter .get-latest h5, .about .mission h5, .about .philosophy .boxes .box p, .specturm h5, .about-features .features .feat p, .about-features .features .feat a, .main-product .breadcrumb .breadcrumb-item a, .main-product .breadcrumb .breadcrumb-item.active, .main-product .product-content .product-info .review span, .main-product .product-content .product-info .product-desc, .main-product .product-content .product-info .product-detail .availability,
+.main-product .product-content .product-info .product-detail .size, .main-product .product-content .product-info .quantity p, .main-product .product-content .product-info .quantity a, .main-product .product-content .product-info .category .sku,
+.main-product .product-content .product-info .category .cat {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -101,7 +103,7 @@ h4 {
 
 header .my-navbar li a, .live-organic .live-content .live-list li, .live-organic .live-content .list-content .content-one .live-info h2, .live-organic .live-content .list-content .content-two,
 .live-organic .live-content .list-content .content-three,
-.live-organic .live-content .list-content .content-four, .top-products h2, .top-products .products .product h4, .top-products .products .product .cart .price, .love-us h2, .love-us .features .feat span, .love-us .features .feat h3, .full-spectrum .benefits .benefit h2, .full-spectrum .benefits .benefit .table .row .cell h4, .testimonials .testimonials-content .carousel-item .carousel-caption span, .popular-articles h2, .popular-articles .articles .article p, .wholesale .left-content .owner h2, footer .footer-content .newsletter .get-latest h3, footer .footer-content .footer-nav .my-navbar li a, footer .footer-content .copyright .left, footer .footer-content .copyright .right, .about h1, .about .mission h2, .about .philosophy h4, .about .philosophy .boxes .box h3, .specturm h3, .specturm .specs .spec .number, .specturm .specs .spec .value, .about-features .features .feat h3 {
+.live-organic .live-content .list-content .content-four, .top-products h2, .top-products .products .product h4, .top-products .products .product .cart .price, .love-us h2, .love-us .features .feat span, .love-us .features .feat h3, .full-spectrum .benefits .benefit h2, .full-spectrum .benefits .benefit .table .row .cell h4, .testimonials .testimonials-content .carousel-item .carousel-caption span, .popular-articles h2, .popular-articles .articles .article p, .wholesale .left-content .owner h2, footer .footer-content .newsletter .get-latest h3, footer .footer-content .footer-nav .my-navbar li a, footer .footer-content .copyright .left, footer .footer-content .copyright .right, .about h1, .about .mission h2, .about .philosophy h4, .about .philosophy .boxes .box h3, .specturm h3, .specturm .specs .spec .number, .specturm .specs .spec .value, .about-features .features .feat h3, .main-product .product-content .product-info h2, .main-product .product-content .product-info .price {
   font-family: "Sofia Pro";
   font-style: normal;
   font-weight: 300;
@@ -1066,5 +1068,176 @@ footer .footer-image {
 }
 
 /* End Features */
+/* Start Product Page */
+/* Start Product */
+.main-product {
+  background-color: #e3e8da;
+}
+.main-product .breadcrumb {
+  background-color: transparent;
+  padding: 64px 0 56px;
+}
+.main-product .breadcrumb .breadcrumb-item a {
+  letter-spacing: 5px;
+  color: #9a948b;
+  opacity: 1;
+}
+.main-product .breadcrumb .breadcrumb-item.active {
+  letter-spacing: 5px;
+  line-height: 24px;
+  color: #7e736b;
+  opacity: 1;
+}
+.main-product .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+  color: #9a948b;
+  opacity: 1;
+  padding: 0 10px;
+}
+.main-product .product-content {
+  overflow: hidden;
+}
+.main-product .product-content .product-image {
+  float: left;
+  width: 50%;
+  width: 570px;
+  height: 579px;
+}
+.main-product .product-content .product-image .main-image {
+  background-color: #ebeddf;
+  position: relative;
+  width: 570px;
+  height: 579px;
+}
+.main-product .product-content .product-image .main-image img {
+  position: absolute;
+  bottom: 48px;
+  right: 77px;
+}
+.main-product .product-content .product-image .different-images {
+  width: 570px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.main-product .product-content .product-image .different-images img {
+  mix-blend-mode: multiply;
+}
+.main-product .product-content .product-info {
+  float: left;
+  width: 469px;
+  height: 741px;
+  margin-left: 131px;
+}
+.main-product .product-content .product-info hr {
+  margin: 27px 0;
+  border: 1px solid #d2d4c7;
+}
+.main-product .product-content .product-info h2 {
+  font-size: 32px;
+  line-height: 24px;
+}
+.main-product .product-content .product-info .review i {
+  color: #a9b090;
+  margin-right: 9px;
+}
+.main-product .product-content .product-info .review span {
+  text-decoration-line: underline;
+  color: #9a948b;
+  opacity: 1;
+}
+.main-product .product-content .product-info .price {
+  font-size: 32px;
+  line-height: 24px;
+  display: block;
+  margin: 32px 0;
+}
+.main-product .product-content .product-info .product-desc {
+  width: 418px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+.main-product .product-content .product-info .product-detail .availability,
+.main-product .product-content .product-info .product-detail .size {
+  color: #9a948b;
+  opacity: 1;
+  margin: 0;
+}
+.main-product .product-content .product-info .product-detail .availability span {
+  color: #7e736b;
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+.main-product .product-content .product-info .product-detail .size span:first-child {
+  margin-left: 15px;
+}
+.main-product .product-content .product-info .product-detail .size span {
+  display: inline-block;
+  margin: 24px 12px 32px 0;
+  padding: 7px 14px 11px;
+  border: 1px solid #cdcfc2;
+  font-size: 13px;
+  color: #7e736b;
+  letter-spacing: 0;
+  opacity: 0.7;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.main-product .product-content .product-info .product-detail .size span:hover {
+  border-color: #79862f;
+  color: #79862f;
+  opacity: 1;
+}
+.main-product .product-content .product-info .quantity {
+  border: 1px solid #c3c4b9;
+  display: flex;
+}
+.main-product .product-content .product-info .quantity p {
+  margin: 0;
+  width: 242px;
+  padding: 25px;
+  line-height: 24px;
+  opacity: 1;
+  color: #9a948b;
+}
+.main-product .product-content .product-info .quantity p span {
+  display: inline-block;
+  margin-left: 49px;
+  color: #79862f;
+}
+.main-product .product-content .product-info .quantity p span i {
+  color: #9a948b;
+  font-size: 8px;
+}
+.main-product .product-content .product-info .quantity a {
+  width: 228px;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 25px;
+  background-color: #a9b090;
+}
+.main-product .product-content .product-info .category .sku,
+.main-product .product-content .product-info .category .cat {
+  color: #9a948b;
+  opacity: 1;
+  margin: 0 0 20px 0;
+}
+.main-product .product-content .product-info .category .sku span,
+.main-product .product-content .product-info .category .cat span {
+  color: #7e736b;
+  letter-spacing: 0;
+  text-transform: initial;
+}
+.main-product .product-content .product-info .social-icons a i {
+  color: #aea594;
+  margin-right: 24px;
+  font-size: 16px;
+}
+
+/* End Product */
 
 /*# sourceMappingURL=main.css.map */
