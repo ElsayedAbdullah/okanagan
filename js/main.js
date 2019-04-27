@@ -11,15 +11,6 @@ $(function() {
       .removeClass("active");
   });
 
-  // Trigger niceScroll plugin
-  $("body").niceScroll({
-    cursorcolor: "#a9b090",
-    cursorwidth: "10px",
-    cursorborder: "1px solid #a9b090",
-    cursorborderradius: 2,
-    zindex: 9999
-  });
-
   // switch between tabs in live-product section
   $(".live-list li").on("click", function() {
     $(this)
@@ -28,6 +19,49 @@ $(function() {
       .removeClass("active");
     $(".list-content > div").hide();
     $($(this).data("content")).fadeIn();
+  });
+
+  //traverse between testimonials
+  $(".right-arrow").click(function(e) {
+    e.preventDefault();
+    if (!$(".slider .active").is(":last-child")) {
+      $(".slider .active").fadeOut(1000, function() {
+        $(".slider .active")
+          .removeClass("active")
+          .next(".client")
+          .addClass("active")
+          .fadeIn();
+      });
+    } else {
+      $(".slider .active").fadeOut(1000, function() {
+        $(".slider .active").removeClass("active");
+        $(".slider .client")
+          .eq(0)
+          .addClass("active")
+          .fadeIn();
+      });
+    }
+  });
+
+  $(".left-arrow").click(function(e) {
+    e.preventDefault();
+    if (!$(".slider .active").is(":first-child")) {
+      $(".slider .active").fadeOut(1000, function() {
+        $(".slider .active")
+          .removeClass("active")
+          .prev(".client")
+          .addClass("active")
+          .fadeIn();
+      });
+    } else {
+      $(".slider .active").fadeOut(1000, function() {
+        $(".slider .active").removeClass("active");
+        $(".slider .client")
+          .eq(3)
+          .addClass("active")
+          .fadeIn();
+      });
+    }
   });
 
   // scroll to top button
@@ -47,10 +81,5 @@ $(function() {
       },
       600
     );
-  });
-
-  // cycling the carousel every 5 seconds
-  $(".carousel").carousel({
-    interval: 5000
   });
 });
