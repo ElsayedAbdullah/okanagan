@@ -2,7 +2,7 @@ $(function() {
   "use strict";
 
   // add class active on navbar when click
-  $(".navbar li a").on("click", function() {
+  $(".my-navbar li a").on("click", function() {
     $(this)
       .addClass("active")
       .parent("li")
@@ -18,6 +18,16 @@ $(function() {
       .siblings()
       .removeClass("active");
     $(".list-content > div").hide();
+    $($(this).data("content")).fadeIn();
+  });
+
+  // switch between tabs in description section in products page
+  $(".list-description li").on("click", function() {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+    $(".description-content > div").hide();
     $($(this).data("content")).fadeIn();
   });
 
@@ -81,5 +91,54 @@ $(function() {
       },
       600
     );
+  });
+
+  // Start Gallery
+  $(".gallery img").on("click", function() {
+    $(this)
+      .addClass("selected")
+      .siblings()
+      .removeClass("selected");
+    $(".master-image .master")
+      .hide()
+      .attr("src", $(this).attr("src"))
+      .fadeIn(500);
+  });
+
+  // increase and decreace the quantity of product by custom input type number
+  $(".product-quantity .quantity .button").on("click", function() {
+    var $button = $(this);
+    var oldValue = $button
+      .parent()
+      .find("input")
+      .val();
+    var newVal;
+
+    if ($button.text() == "+") {
+      newVal = parseFloat(oldValue) + 1;
+    } else {
+      // Don't allow decrementing below zero
+      if (oldValue > 0) {
+        newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 0;
+      }
+    }
+
+    $button
+      .parent()
+      .find("input")
+      .val(newVal);
+  });
+
+  //
+  $(".product-info .review a").on("click", function() {
+    $("html,body").animate(
+      {
+        scrollTop: $(".list-description #review").offset().top
+      },
+      600
+    );
+    $(".list-description #review").click();
   });
 });
