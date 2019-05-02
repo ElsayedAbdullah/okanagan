@@ -49,11 +49,11 @@ p {
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-Light.otf);
+  src: url(../font/Montserrat-Light.otf);
 }
 @font-face {
   font-family: "Sofia Pro";
-  src: url(../fonts/sofiapro-light.otf);
+  src: url(../font/sofiapro-light.otf);
 }
 .scroll-top {
   position: fixed;
@@ -75,7 +75,9 @@ p {
 }
 .scroll-top i {
   color: #fff;
-  font-size: 25px;
+  font-size: 15px;
+  position: absolute;
+  left: 17px;
 }
 
 .text-center {
@@ -86,7 +88,7 @@ p {
   text-transform: uppercase;
 }
 
-.hero-image .hero-content .button, .live-organic .live-content .list-content .content-one .live-info .button, .wholesale .left-content .owner .button, footer .footer-content .newsletter .subscribe .button, .product-table .continue-shopping .right .button, .checkout .billing .billing-details form .payment .complete-order .right .button, .order .order-details li .button {
+.hero-image .hero-content .button, .live-organic .live-content .list-content .content-one .live-info .button, .wholesale .left-content .owner .button, footer .footer-content .newsletter .subscribe .button, .product-table .continue-shopping .right .button, .checkout .billing .billing-details form .payment .complete-order .right .button, .order-finish .order-details li .button {
   display: inline-block;
   width: 278px;
   height: 72px;
@@ -102,10 +104,10 @@ p {
 
 .live-organic .live-content .list-content .content-one .live-info p, .top-products .products .product .cart a, .love-us .features .feat p, .full-spectrum .benefits .benefit .table .row .cell p, .testimonials .testimonials-content h4, .testimonials .testimonials-content .slider .client p, .popular-articles .articles .article a, .wholesale .left-content .owner h4, .wholesale .left-content .owner p, footer .footer-content .newsletter .get-latest h5, .about .mission h5, .about .philosophy .boxes .box p, .specturm h5, .about-features .features .feat p, .about-features .features .feat a, .main-product .breadcrumb .breadcrumb-item a, .main-product .breadcrumb .breadcrumb-item.active, .main-product .product-content .product-info .review a, .main-product .product-content .product-info .product-desc, .main-product .product-content .product-info .product-detail .availability,
 .main-product .product-content .product-info .product-detail .size, .main-product .product-content .product-info .product-quantity .quantity label, .main-product .product-content .product-info .product-quantity .submit, .main-product .product-content .product-info .category .sku,
-.main-product .product-content .product-info .category .cat, .description .description-content .content-one p, .description h3, .description .products .product .cart a, .product-table .table-products .row-products .head, .product-table .table-products .row-products .cell-products.price, .product-table .table-products .row-products .cell-products.the-total, .product-table .product-total .update button, .product-table .continue-shopping .left a, .checkout .billing .billing-details form .asterisk, .checkout .billing .billing-details form label, .checkout .billing .billing-details form input[type="text"],
+.main-product .product-content .product-info .category .cat, .description .description-content .content-one p, .description h3, .description .products .product .cart a, .product-table table thead tr th, .product-table table tbody tr .product-price, .product-table table tbody tr .product-total, .product-table table tbody .actions .update button, .product-table .continue-shopping .left a, .checkout .billing .billing-details form .asterisk, .checkout .billing .billing-details form label, .checkout .billing .billing-details form input[type="text"],
 .checkout .billing .billing-details form input[type="email"],
 .checkout .billing .billing-details form select, .checkout .billing .billing-details form input::placeholder, .checkout .billing .billing-details form .payment .complete-order .left a, .checkout .billing .order .order-details, .checkout .billing .order .items .item .productPrice, .checkout .billing .order .the-subtotal .subtotal-container .value,
-.checkout .billing .order .the-subtotal .shipping-container .value, .checkout .billing .order .total-container .value, .order .order-details li .title {
+.checkout .billing .order .the-subtotal .shipping-container .value, .checkout .billing .order .total-container .value, .order-finish .order-details li .title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -117,12 +119,12 @@ p {
 
 header .my-navbar li a, .hero-image .hero-content h1, .live-organic .live-content .live-list li, .live-organic .live-content .list-content .content-one .live-info h2, .live-organic .live-content .list-content .content-two,
 .live-organic .live-content .list-content .content-three,
-.live-organic .live-content .list-content .content-four, .top-products h2, .top-products .products .product h4, .top-products .products .product .cart .price, .love-us h2, .love-us .features .feat span, .love-us .features .feat h3, .full-spectrum .benefits .benefit h2, .full-spectrum .benefits .benefit .table .row .cell h4, .testimonials .testimonials-content h3, .testimonials .testimonials-content .slider .client span, .popular-articles h2, .popular-articles .articles .article p, .wholesale .left-content .owner h2, footer .footer-content .newsletter .get-latest input, footer .footer-content .footer-nav .my-navbar li a, footer .footer-content .copyright .left, footer .footer-content .copyright .right, .about h1, .about .mission h2, .about .philosophy h4, .about .philosophy .boxes .box h3, .specturm h3, .specturm .specs .spec .number, .specturm .specs .spec .value, .about-features .features .feat h3, .main-product .product-content .product-info h2, .main-product .product-content .product-info .price, .main-product .list-description li, .description .description-content .content-two, .description .products .product h4, .description .products .product .cart .price, .cart-hero-image .breadcrumb li, .cart-hero-image .breadcrumb li:not(:last-child):after, .cart-hero-image .breadcrumb li.active, .product-table .table-products .row-products .cell-products.product h3, .product-table .product-total .subtotal p, .product-table .product-total .subtotal span, .checkout .billing .billing-details h2, .checkout .billing .billing-details form .payment h2, .checkout .billing .billing-details form .payment .credit-payment .card .label-radio,
+.live-organic .live-content .list-content .content-four, .top-products h2, .top-products .products .product h4, .top-products .products .product .cart .price, .love-us h2, .love-us .features .feat span, .love-us .features .feat h3, .full-spectrum .benefits .benefit h2, .full-spectrum .benefits .benefit .table .row .cell h4, .testimonials .testimonials-content h3, .testimonials .testimonials-content .slider .client span, .popular-articles h2, .popular-articles .articles .article p, .wholesale .left-content .owner h2, footer .footer-content .newsletter .get-latest input, footer .footer-content .footer-nav .my-navbar li a, footer .footer-content .copyright .left, footer .footer-content .copyright .right, .about h1, .about .mission h2, .about .philosophy h4, .about .philosophy .boxes .box h3, .specturm h3, .specturm .specs .spec .number, .specturm .specs .spec .value, .about-features .features .feat h3, .main-product .product-content .product-info h2, .main-product .product-content .product-info .price, .main-product .list-description li, .description .description-content .content-two, .description .products .product h4, .description .products .product .cart .price, .cart-hero-image .breadcrumb li, .cart-hero-image .breadcrumb li:not(:last-child):after, .cart-hero-image .breadcrumb li.active, .product-table table tbody tr .product-name, .product-table table tbody .actions .subtotal p, .product-table table tbody .actions .subtotal span, .checkout .billing .billing-details h2, .checkout .billing .billing-details form .payment h2, .checkout .billing .billing-details form .payment .credit-payment .card .label-radio,
 .checkout .billing .billing-details form .payment .paypal-payment .card .label-radio, .checkout .billing .order h2, .checkout .billing .order .items .item .productName, .checkout .billing .order .the-subtotal .subtotal-container .subtotal,
 .checkout .billing .order .the-subtotal .subtotal-container .shipping,
 .checkout .billing .order .the-subtotal .shipping-container .subtotal,
-.checkout .billing .order .the-subtotal .shipping-container .shipping, .checkout .billing .order .total-container .total, .order .message-text, .order h2, .order .order-details li .value, .order .customer-details .customer-container h2,
-.order .customer-details .billing-container h2 {
+.checkout .billing .order .the-subtotal .shipping-container .shipping, .checkout .billing .order .total-container .total, .order-finish .message-text, .order-finish h2, .order-finish .order-details li .value, .order-finish .customer-details .customer-container .customer-heading h2,
+.order-finish .customer-details .billing-container .customer-heading h2, .order-finish .billing-details-heading {
   font-family: "Sofia Pro";
   font-style: normal;
   font-weight: 300;
@@ -165,14 +167,18 @@ header .my-navbar li a {
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
 }
-header .my-navbar li a svg path {
-  transition: all 0.5s ease-in-out;
-}
 header .my-navbar li a:hover, header .my-navbar li a.active {
   color: #79862f;
 }
-header .my-navbar li a:hover svg path, header .my-navbar li a.active svg path {
-  fill: #79862f;
+header .my-navbar li a:hover i, header .my-navbar li a.active i {
+  color: #79862f;
+}
+header .my-navbar li a i {
+  color: #afb695;
+  transition: all 0.5s ease-in-out;
+}
+header .my-navbar li a i:hover {
+  color: #79862f;
 }
 header .my-navbar li.basket:hover path {
   fill: #79862f;
@@ -563,9 +569,8 @@ header .my-navbar li.basket a {
   border: 1px solid #c3c7b6;
   padding: 51px 36px 43px;
 }
-.full-spectrum .benefits .benefit .table .row .cell:hover path {
-  transition: all 0.5s ease-in-out;
-  fill: #79862f;
+.full-spectrum .benefits .benefit .table .row .cell:hover i {
+  color: #79862f;
 }
 .full-spectrum .benefits .benefit .table .row .cell.one {
   border-bottom: 0;
@@ -589,12 +594,12 @@ header .my-navbar li.basket a {
   opacity: 0.5;
   line-height: 24px;
 }
-.full-spectrum .benefits .benefit .table .row .cell svg {
+.full-spectrum .benefits .benefit .table .row .cell i {
   position: absolute;
   top: 10px;
   right: 10px;
-}
-.full-spectrum .benefits .benefit .table .row .cell svg path {
+  font-size: 10px;
+  color: #a9b090;
   transition: all 0.5s ease-in-out;
 }
 
@@ -927,6 +932,15 @@ footer .footer-content .footer-nav .social:before {
 footer .footer-content .footer-nav .social a {
   margin-left: 24px;
   display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+footer .footer-content .footer-nav .social a:hover i {
+  color: #79862f;
+}
+footer .footer-content .footer-nav .social a i {
+  color: #aea594;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
 }
 footer .footer-content .footer-nav .social a svg:hover path {
   fill: #79862f;
@@ -1419,12 +1433,14 @@ footer .footer-image {
 .main-product .product-content .product-info .social-icons a {
   margin-right: 24px;
   display: inline-block;
-}
-.main-product .product-content .product-info .social-icons a svg path {
   transition: all 0.5s ease-in-out;
 }
-.main-product .product-content .product-info .social-icons a:hover svg path {
-  fill: #79862f;
+.main-product .product-content .product-info .social-icons a i {
+  color: #aea594;
+  transition: all 0.5s ease-in-out;
+}
+.main-product .product-content .product-info .social-icons a:hover i {
+  color: #79862f;
 }
 .main-product .list-description {
   display: flex;
@@ -1619,103 +1635,118 @@ footer .footer-image {
 .product-table {
   background-color: #dee3d5;
 }
-.product-table .table-products {
+.product-table table {
   width: 100%;
-  display: table;
   padding-top: 144px;
 }
-.product-table .table-products .row-products {
-  display: table-row;
-}
-.product-table .table-products .row-products .head {
+.product-table table thead tr th {
+  text-align: left;
+  border-bottom: 2px solid #d2d4c7;
   text-transform: uppercase;
   color: #9a948b;
   padding-bottom: 23px;
 }
-.product-table .table-products .row-products:first-child .cell-products, .product-table .table-products .row-products:last-child .cell-products {
-  border-bottom: 2px solid #d2d4c7;
-}
-.product-table .table-products .row-products .cell-products {
-  display: table-cell;
-  padding-bottom: 23px;
+.product-table table tbody tr td {
   border-bottom: 1px solid #d2d4c7;
+  padding: 23px 0;
 }
-.product-table .table-products .row-products .cell-products.product {
-  display: flex;
-  align-items: center;
+.product-table table tbody tr .product-remove {
+  width: 35px;
 }
-.product-table .table-products .row-products .cell-products.product button {
-  background-color: transparent;
-  border: 0;
-  margin-right: 10px;
+.product-table table tbody tr .product-remove i {
   cursor: pointer;
+  color: #aea594;
+  font-size: 10px;
 }
-.product-table .table-products .row-products .cell-products.product button svg path {
-  transition: all 0.5s ease-in-out;
+.product-table table tbody tr .product-thumbnail {
+  width: 128px;
 }
-.product-table .table-products .row-products .cell-products.product button:hover svg path {
-  fill: #79862f;
-}
-.product-table .table-products .row-products .cell-products.product img {
-  margin-top: 24px;
-}
-.product-table .table-products .row-products .cell-products.product h3 {
+.product-table table tbody tr .product-name {
+  width: 435px;
   font-size: 18px;
   line-height: 13px;
   text-transform: uppercase;
   opacity: 0.7;
-  margin-left: 32px;
 }
-.product-table .table-products .row-products .cell-products.price {
+.product-table table tbody tr .product-price {
+  width: 200px;
   font-size: 18px;
   line-height: 18px;
   color: #7e736b;
   letter-spacing: 0;
+  position: relative;
 }
-.product-table .table-products .row-products .cell-products.the-total {
-  font-size: 18px;
-  line-height: 18px;
+.product-table table tbody tr .product-price:before {
+  content: "$";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  margin-top: -8.5px;
+  font-family: "Montserrat";
   color: #7e736b;
-  opacity: 0.7;
 }
-.product-table .table-products .row-products .cell-products.quantity .quantity-container {
+.product-table table tbody tr .product-quantity .quantity-container {
   width: 102px;
   border: 1px solid #c3c4b9;
   height: 56px;
   line-height: 56px;
   text-align: center;
 }
-.product-table .table-products .row-products .cell-products.quantity span {
+.product-table table tbody tr .product-quantity .quantity-container .quantity {
+  display: flex;
+  justify-content: center;
+}
+.product-table table tbody tr .product-quantity .quantity-container .quantity .number {
+  text-align: center;
+  width: 50px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #79862f;
+}
+.product-table table tbody tr .product-quantity .quantity-container .quantity .number::-webkit-inner-spin-button, .product-table table tbody tr .product-quantity .quantity-container .quantity .number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product-table table tbody tr .product-quantity .quantity-container .quantity .minus,
+.product-table table tbody tr .product-quantity .quantity-container .quantity .plus {
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px;
   color: #c2baaf;
+  transition: all 0.5s ease-in-out;
 }
-.product-table .table-products .row-products .cell-products.quantity span:hover {
+.product-table table tbody tr .product-quantity .quantity-container .quantity .minus:hover,
+.product-table table tbody tr .product-quantity .quantity-container .quantity .plus:hover {
   color: #79862f;
 }
-.product-table .table-products .row-products .cell-products.quantity input {
-  display: inline-block;
-  color: #79862f;
-  width: 25px;
-  outline: none;
-  border: 0;
-  background-color: transparent;
-  text-align: center;
+.product-table table tbody tr .product-total {
+  font-size: 18px;
+  line-height: 18px;
+  color: #7e736b;
+  opacity: 0.7;
+  position: relative;
 }
-.product-table .product-total {
+.product-table table tbody tr .product-total:before {
+  content: "$";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  margin-top: -8.5px;
+  font-family: "Montserrat";
+  color: #7e736b;
+}
+.product-table table tbody .actions {
   overflow: hidden;
   padding: 16px 0;
   border-bottom: 1px solid #d2d4c7;
 }
-.product-table .product-total .update {
+.product-table table tbody .actions .update {
   text-align: left;
   float: left;
   width: 50%;
 }
-.product-table .product-total .update button {
+.product-table table tbody .actions .update button {
   background-color: #eef2e4;
   border: 0;
   width: 239px;
@@ -1730,10 +1761,10 @@ footer .footer-image {
   position: relative;
   transition: all 0.5s ease-in-out;
 }
-.product-table .product-total .update button:hover {
+.product-table table tbody .actions .update button:hover {
   color: #79862f;
 }
-.product-table .product-total .update button:after {
+.product-table table tbody .actions .update button:after {
   content: "";
   width: 1px;
   height: 88px;
@@ -1743,25 +1774,28 @@ footer .footer-image {
   background-color: #d2d4c7;
   display: inline-block;
 }
-.product-table .product-total .subtotal {
+.product-table table tbody .actions .subtotal {
   text-align: right;
   float: right;
   width: 50%;
 }
-.product-table .product-total .subtotal p {
+.product-table table tbody .actions .subtotal p {
   font-size: 18px;
   line-height: 13px;
   text-transform: uppercase;
   opacity: 0.7;
   margin-top: 16px;
-  margin-right: 36px;
+  margin-right: 17px;
+  display: inline-block;
 }
-.product-table .product-total .subtotal span {
+.product-table table tbody .actions .subtotal span {
   font-size: 24px;
   line-height: 17px;
   text-transform: uppercase;
   color: #79862f;
   opacity: 0.7;
+  display: inline-block;
+  margin-right: 36px;
 }
 .product-table .continue-shopping {
   overflow: hidden;
@@ -1780,18 +1814,17 @@ footer .footer-image {
   color: #a9b090;
   transition: all 0.5s ease-in-out;
 }
-.product-table .continue-shopping .left a svg {
+.product-table .continue-shopping .left a i {
   position: relative;
-  top: 8px;
-}
-.product-table .continue-shopping .left a svg path {
+  top: 3px;
+  font-size: 24px;
   transition: all 0.5s ease-in-out;
 }
 .product-table .continue-shopping .left a:hover {
   color: #79862f;
 }
-.product-table .continue-shopping .left a:hover svg path {
-  fill: #79862f;
+.product-table .continue-shopping .left a:hover i {
+  color: #79862f;
 }
 .product-table .continue-shopping .right {
   text-align: right;
@@ -2019,7 +2052,7 @@ footer .footer-image {
   content: "";
   position: absolute;
   top: -1px;
-  left: -38px;
+  left: -39px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -2206,11 +2239,11 @@ footer .footer-image {
   opacity: 0.9;
 }
 
-.order {
+.order-finish {
   padding-top: 88px;
   background-color: #dee3d5;
 }
-.order .message-text {
+.order-finish .message-text {
   height: 96px;
   border: 1px solid #c3c4b9;
   color: #79862f;
@@ -2218,24 +2251,24 @@ footer .footer-image {
   font-size: 24px;
   opacity: 0.7;
 }
-.order h2 {
+.order-finish h2 {
   font-size: 32px;
   line-height: 24px;
   opacity: 0.7;
   margin-bottom: 40px;
   margin-top: 72px;
 }
-.order .order-details {
+.order-finish .order-details {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 165px;
   background-color: #ebeddf;
 }
-.order .order-details li {
+.order-finish .order-details li {
   position: relative;
 }
-.order .order-details li:not(:last-child):after {
+.order-finish .order-details li:not(:last-child):after {
   content: "";
   position: absolute;
   top: 10px;
@@ -2244,52 +2277,96 @@ footer .footer-image {
   height: 24px;
   background-color: #dee0d3;
 }
-.order .order-details li span {
+.order-finish .order-details li span {
   display: block;
 }
-.order .order-details li .title {
+.order-finish .order-details li .title {
   opacity: 0.4;
   margin-bottom: 12px;
 }
-.order .order-details li .value {
+.order-finish .order-details li .value {
   font-size: 18px;
   line-height: 18px;
   opacity: 0.7;
 }
-.order .order-details li .button {
+.order-finish .order-details li .button {
   width: 200px;
   height: 72px;
   border: 0;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-.order .order-details li .button svg {
+.order-finish .order-details li .button svg {
   position: relative;
   top: 7px;
   left: -5px;
 }
-.order .order-details li .button:hover {
+.order-finish .order-details li .button:hover {
   background-color: #79862f;
 }
-.order .customer-details {
+.order-finish .customer-details {
   overflow: hidden;
 }
-.order .customer-details .customer-container,
-.order .customer-details .billing-container {
+.order-finish .customer-details .customer-container,
+.order-finish .customer-details .billing-container {
   float: left;
   width: 50%;
 }
-.order .customer-details .customer-container h2,
-.order .customer-details .billing-container h2 {
+.order-finish .customer-details .customer-container .customer-heading,
+.order-finish .customer-details .billing-container .customer-heading {
+  position: relative;
+}
+.order-finish .customer-details .customer-container .customer-heading h2,
+.order-finish .customer-details .billing-container .customer-heading h2 {
   font-size: 32px;
   line-height: 24px;
   opacity: 0.7;
   margin-bottom: 33px;
   margin-top: 72px;
+  display: inline-block;
 }
-.order .customer-details .customer-container ul,
-.order .customer-details .billing-container ul {
+.order-finish .customer-details .customer-container .customer-heading a,
+.order-finish .customer-details .billing-container .customer-heading a {
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #79862e;
+  position: relative;
+  top: -8px;
+  left: 10px;
+}
+.order-finish .customer-details .customer-container .customer-heading a:after,
+.order-finish .customer-details .billing-container .customer-heading a:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  width: 72px;
+  height: 2px;
+  background-color: #79862e;
+}
+.order-finish .customer-details .customer-container ul li,
+.order-finish .customer-details .billing-container ul li {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #7e736b;
+}
+.order-finish .customer-details .billing-container ul li:nth-of-type(2) {
+  margin-top: -10px;
+}
+.order-finish .table-products {
+  padding-top: 80px;
+}
+.order-finish .product-table table {
+  padding-top: 0;
+}
+.order-finish .billing-details-heading {
+  font-size: 32px;
   line-height: 24px;
+  opacity: 0.7;
+  margin-bottom: 35px;
+  margin-top: 72px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */
