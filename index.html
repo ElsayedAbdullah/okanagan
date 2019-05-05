@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>okanagan</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/fontello.css" />
+  <link rel="stylesheet" href="css/fontello.css" /> 
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -18,21 +18,26 @@
       <div class="logo">
         <a href="index.html"><img src="imgs/header-logo.png" alt="logo" /></a>
       </div>
+      <button class="burgor">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
       <ul class="my-navbar">
         <li><a class="active" href="index.html">home</a></li>
         <li><a href="products.html">products</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">faqs</a></li>
+        <li class="hidden-sm"><a href="#">blog</a></li>
+        <li class="hidden-sm"><a href="#">faqs</a></li>
         <li><a href="about.html">about</a></li>
         <li><a href="#">contact</a></li>
-        <li class="user">
+        <li class="user hidden-xs">
           <a href="#">
             <i class="icon-user"></i>
           </a>
         </li>
-        <li class="basket">
+        <li class="basket hidden-xs">
           <a href="shoppingCart.html">
-              <i class="icon-basket"></i>
+            <i class="icon-basket"></i>
           </a>
         </li>
       </ul>
@@ -41,32 +46,35 @@
   <!-- End  Header -->
 
   <!-- Start Hero Image -->
-  <main class="hero-image">
-    <div class="my-container">
-      <div class="hero-content">
-        <div class="logo">
-          <img src="imgs/biglogo.png" alt="logo" />
+  <main class="hero">
+    <div class="hero-image">
+      <div class="my-container">
+        <div class="hero-content">
+          <div class="logo">
+            <img src="imgs/biglogo.png" alt="logo" />
+          </div>
+          <h1 class="text-uppercase">a quality <br />you can feel</h1>
+          <a href="#" class="button">shop now!</a>
+          <div class="social-icons">
+            <a href="#">
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="icon-instagram"></i>
+            </a>
+            <div class="line"></div>
+          </div>
         </div>
-        <h1 class="text-uppercase">a quality <br />you can feel</h1>
-        <a href="#" class="button">shop now!</a>
-        <div class="social-icons">
-          <a href="#">
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="#">
-            <i class="icon-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="icon-instagram"></i>
-          </a>
-          <div class="line"></div>
+        <div class="product-image">
+          <img src="imgs/Products.png" alt="" />
         </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="product-image">
-        <img src="imgs/Products.png" alt="" />
-      </div>
-      <div class="clearfix"></div>
     </div>
+
   </main>
   <!-- End Hero Image -->
 
@@ -461,11 +469,6 @@
 
   <!-- End Footer -->
 
-  <!-- Start Scroll top Button -->
-  <div class="scroll-top">
-    <i class="icon-arrow-down"></i>
-  </div>
-  <!-- End Scroll top Button -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>

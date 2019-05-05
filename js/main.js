@@ -11,6 +11,12 @@ $(function() {
       .removeClass("active");
   });
 
+  //burgor button
+  $(".burgor").on("click", function() {
+    $(this).toggleClass("transformed");
+    $(".my-navbar").slideToggle(600);
+  });
+
   // switch between tabs in live-product section
   $(".live-list li").on("click", function() {
     $(this)
@@ -72,25 +78,6 @@ $(function() {
           .fadeIn();
       });
     }
-  });
-
-  // scroll to top button
-  var scrollButton = $(".scroll-top");
-  $(window).scroll(function() {
-    if ($(this).scrollTop() >= 700) {
-      scrollButton.fadeIn(400);
-    } else {
-      scrollButton.fadeOut(400);
-    }
-  });
-
-  scrollButton.on("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: 0
-      },
-      600
-    );
   });
 
   // Start Gallery
@@ -301,5 +288,13 @@ $(function() {
         .find(".alert-zip")
         .fadeOut(300);
     }
+  });
+
+  $(".country, .city").select2();
+
+  // date
+  var cleaveDate = new Cleave(".input-date", {
+    date: true,
+    datePattern: ["m", "y"]
   });
 });

@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Products</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/select2.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -17,19 +18,24 @@
         <div class="logo">
           <a href="index.html"><img src="imgs/header-logo.png" alt="logo"/></a>
         </div>
+        <button class="burgor">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
         <ul class="my-navbar">
           <li><a href="index.html">home</a></li>
           <li><a href="products.html">products</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">faqs</a></li>
+          <li class="hidden-sm"><a href="#">blog</a></li>
+          <li class="hidden-sm"><a href="#">faqs</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="#">contact</a></li>
-          <li class="user">
+          <li class="user hidden-xs">
             <a href="#">
               <i class="icon-user"></i>
             </a>
           </li>
-          <li class="basket">
+          <li class="basket hidden-xs">
             <a href="shoppingCart.html">
               <i class="icon-basket"></i>
             </a>
@@ -90,25 +96,13 @@
               <div class="alert alert-phone">This Field Can't be empty</div>
               <label>Country <span class="asterisk">*</span></label>
               <div class="custom-select">
-                <select name="" id="">
+                <select class="country" name="" id="">
                   <option value="canada">canada</option>
                   <option value="America">America</option>
                   <option value="Sewed">Sewed</option>
                   <option value="Polanda">Polanda</option>
                 </select>
-                <svg
-                  class="arrow"
-                  width="13"
-                  height="8"
-                  viewBox="0 0 13 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.2934 1.29296L6.00041 5.58596L1.70741 1.29296C1.5188 1.1108 1.2662 1.01001 1.00401 1.01229C0.741809 1.01456 0.490997 1.11973 0.305589 1.30514C0.12018 1.49055 0.0150115 1.74136 0.0127331 2.00356C0.0104547 2.26575 0.111249 2.51836 0.293407 2.70696L5.29341 7.70696C5.48094 7.89443 5.73524 7.99975 6.00041 7.99975C6.26557 7.99975 6.51988 7.89443 6.70741 7.70696L11.7074 2.70696C11.8029 2.61471 11.8791 2.50437 11.9315 2.38236C11.9839 2.26036 12.0115 2.12914 12.0127 1.99636C12.0138 1.86358 11.9885 1.7319 11.9382 1.60901C11.8879 1.48611 11.8137 1.37446 11.7198 1.28056C11.6259 1.18667 11.5143 1.11242 11.3914 1.06214C11.2685 1.01186 11.1368 0.986555 11.004 0.987709C10.8712 0.988862 10.74 1.01645 10.618 1.06886C10.496 1.12127 10.3857 1.19745 10.2934 1.29296Z"
-                    fill="#AEA594"
-                  />
-                </svg>
+                <i class="icon-arrow-down"></i>
               </div>
               <label>Address <span class="asterisk">*</span></label>
               <input type="text" placeholder="street address" class="address" />
@@ -125,24 +119,12 @@
                 <div class="province">
                   <label>Province <span class="asterisk">*</span></label>
                   <div class="custom-select">
-                    <select name="" id="">
+                    <select class="city" name="" id="">
                       <option value="1">New York</option>
                       <option value="1">Wagshinton</option>
                       <option value="1">Elnemsa</option>
                     </select>
-                    <svg
-                      class="arrow"
-                      width="13"
-                      height="8"
-                      viewBox="0 0 13 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.2934 1.29296L6.00041 5.58596L1.70741 1.29296C1.5188 1.1108 1.2662 1.01001 1.00401 1.01229C0.741809 1.01456 0.490997 1.11973 0.305589 1.30514C0.12018 1.49055 0.0150115 1.74136 0.0127331 2.00356C0.0104547 2.26575 0.111249 2.51836 0.293407 2.70696L5.29341 7.70696C5.48094 7.89443 5.73524 7.99975 6.00041 7.99975C6.26557 7.99975 6.51988 7.89443 6.70741 7.70696L11.7074 2.70696C11.8029 2.61471 11.8791 2.50437 11.9315 2.38236C11.9839 2.26036 12.0115 2.12914 12.0127 1.99636C12.0138 1.86358 11.9885 1.7319 11.9382 1.60901C11.8879 1.48611 11.8137 1.37446 11.7198 1.28056C11.6259 1.18667 11.5143 1.11242 11.3914 1.06214C11.2685 1.01186 11.1368 0.986555 11.004 0.987709C10.8712 0.988862 10.74 1.01645 10.618 1.06886C10.496 1.12127 10.3857 1.19745 10.2934 1.29296Z"
-                        fill="#AEA594"
-                      />
-                    </svg>
+                    <i class="icon-arrow-down"></i>
                   </div>
                 </div>
                 <div class="zip-code">
@@ -162,7 +144,7 @@
                 <h2 class="text-uppercase">payment methods</h2>
                 <div class="credit-payment">
                   <div class="card">
-                    <input type="radio" name="method" id="card" />
+                    <input type="radio" name="method" id="card" checked />
                     <label class="label-radio" for="card">credit card</label>
                   </div>
                   <div class="credit-imgs">
@@ -180,7 +162,11 @@
                   </div>
                   <div class="date">
                     <label>Exp. date <span class="asterisk">*</span></label>
-                    <input type="text" placeholder="MM / YY" />
+                    <input
+                      class="input-date"
+                      type="text"
+                      placeholder="MM / YY"
+                    />
                   </div>
                   <div class="cvc">
                     <label>CVC/CVV <span class="asterisk">*</span></label>
@@ -199,19 +185,7 @@
                 <div class="complete-order">
                   <div class="left">
                     <a href="shoppingCart.html">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 28 28"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.707272 13.0383L5.65702 8.08859L7.07123 9.5028L3.81854 12.7555L26.2184 12.4728V14.4527L3.81854 14.7354L7.07123 17.9881L5.65702 19.4023L0.707274 14.4525C0.28301 14.0283 0.283008 13.4626 0.707272 13.0383Z"
-                          fill="#A9B090"
-                        />
-                      </svg>
-
+                      <i class="icon-long-arrow-left"></i>
                       return to cart
                     </a>
                   </div>
@@ -324,12 +298,9 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- Start Scroll top Button -->
-    <div class="scroll-top">
-      <i class="icon-arrow-down"></i>
-    </div>
-    <!-- End Scroll top Button -->
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/cleave.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
