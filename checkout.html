@@ -1,160 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Products</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/fontello.css" />
-    <link rel="stylesheet" href="css/select2.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
-    <!-- Start Header -->
-    <header>
-      <div class="my-container">
-        <div class="logo">
-          <a href="index.html"><img src="imgs/header-logo.png" alt="logo"/></a>
-        </div>
-        <button class="burgor">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-        <ul class="my-navbar">
-          <li><a href="index.html">home</a></li>
-          <li><a href="products.html">products</a></li>
-          <li class="hidden-sm"><a href="#">blog</a></li>
-          <li class="hidden-sm"><a href="#">faqs</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="#">contact</a></li>
-          <li class="user hidden-xs">
-            <a href="#">
-              <i class="icon-user"></i>
-            </a>
-          </li>
-          <li class="basket hidden-xs">
-            <a href="shoppingCart.html">
-              <i class="icon-basket"></i>
-            </a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Products</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/fontello.css" />
+  <link rel="stylesheet" href="css/select2.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="my-container">
+      <div class="logo">
+        <a href="index.html"><img src="imgs/header-logo.png" alt="logo" /></a>
       </div>
-    </header>
-    <!-- End  Header -->
+      <button class="burgor">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <ul class="my-navbar">
+        <li><a href="index.html">home</a></li>
+        <li><a href="products.html">products</a></li>
+        <li class="hidden-sm"><a href="#">blog</a></li>
+        <li class="hidden-sm"><a href="#">faqs</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li class="user hidden-xs">
+          <a href="#">
+            <i class="icon-user"></i>
+          </a>
+        </li>
+        <li class="basket hidden-xs">
+          <a href="shoppingCart.html">
+            <i class="icon-basket"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- End  Header -->
 
-    <!-- Start Hero Image -->
-    <section class="cart-hero-image">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item text-uppercase">
-            <a href="shoppingCart.html">cart</a>
-          </li>
-          <li class="breadcrumb-item text-uppercase active">checkout</li>
-          <li class="breadcrumb-item text-uppercase">finish</li>
-        </ol>
-      </nav>
-    </section>
-    <!-- End Hero Image -->
+  <!-- Start Hero Image -->
+  <section class="cart-hero-image">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item text-uppercase">
+          <a href="shoppingCart.html">cart</a>
+        </li>
+        <li class="breadcrumb-item text-uppercase active">checkout</li>
+        <li class="breadcrumb-item text-uppercase">finish</li>
+      </ol>
+    </nav>
+  </section>
+  <!-- End Hero Image -->
 
-    <!-- Start Checkout -->
-    <section class="checkout">
-      <div class="my-container">
-        <div class="billing">
-          <div class="billing-details">
-            <h2 class="text-uppercase">billing details</h2>
-            <form action="" method="POST">
-              <div class="full-name">
-                <div class="first">
-                  <label
-                    >First Name
-                    <span class="asterisk asterisk-fname">*</span></label
-                  >
-                  <input type="text" class="firstname" />
-                </div>
-                <div class="last">
-                  <label
-                    >Last Name
-                    <span class="asterisk asterisk-lname">*</span></label
-                  >
-                  <input type="text" class="lastname" />
-                </div>
+  <!-- Start Checkout -->
+  <section class="checkout">
+    <div class="my-container">
+      <div class="billing">
+        <div class="billing-details">
+          <h2 class="text-uppercase">billing details</h2>
+          <form action="" method="POST">
+            <div class="full-name">
+              <div class="first">
+                <label>First Name
+                  <span class="asterisk asterisk-fname">*</span></label>
+                <input type="text" class="firstname" />
               </div>
-              <div class="alert alert-name">This Field Can't be empty</div>
-              <label
-                >Email Address
-                <span class="asterisk asterisk-email">*</span></label
-              >
-              <input type="email" class="email" />
-              <div class="alert alert-email">This Field Can't be empty</div>
-              <label
-                >Phone <span class="asterisk asterisk-phone">*</span></label
-              >
-              <input type="text" class="phone" />
-              <div class="alert alert-phone">This Field Can't be empty</div>
-              <label>Country <span class="asterisk">*</span></label>
-              <div class="custom-select">
-                <select class="country" name="" id="">
-                  <option value="canada">canada</option>
-                  <option value="America">America</option>
-                  <option value="Sewed">Sewed</option>
-                  <option value="Polanda">Polanda</option>
-                </select>
-                <i class="icon-arrow-down"></i>
+              <div class="last">
+                <label>Last Name
+                  <span class="asterisk asterisk-lname">*</span></label>
+                <input type="text" class="lastname" />
               </div>
-              <label>Address <span class="asterisk">*</span></label>
-              <input type="text" placeholder="street address" class="address" />
-              <div class="alert alert-address">This Field Can't be empty</div>
+            </div>
+            <div class="alert alert-name">This Field Can't be empty</div>
+            <label>Email Address
+              <span class="asterisk asterisk-email">*</span></label>
+            <input type="email" class="email" />
+            <div class="alert alert-email">This Field Can't be empty</div>
+            <label>Phone <span class="asterisk asterisk-phone">*</span></label>
+            <input type="text" class="phone" />
+            <div class="alert alert-phone">This Field Can't be empty</div>
+            <label>Country <span class="asterisk">*</span></label>
+            <div class="custom-select">
+              <select class="country" name="" id="">
+                <option value="canada">canada</option>
+                <option value="America">America</option>
+                <option value="Sewed">Sewed</option>
+                <option value="Polanda">Polanda</option>
+              </select>
+              <i class="icon-arrow-down"></i>
+            </div>
+            <label>Address <span class="asterisk">*</span></label>
+            <input type="text" placeholder="street address" class="address" />
+            <div class="alert alert-address">This Field Can't be empty</div>
 
-              <input
-                type="text"
-                placeholder="Appartment, suit, unit, etc (optional)"
-              />
-              <label>Town/city <span class="asterisk">*</span></label>
-              <input type="text" class="town" />
-              <div class="alert alert-town">This Field Can't be empty</div>
-              <div class="Province-container">
-                <div class="province">
-                  <label>Province <span class="asterisk">*</span></label>
-                  <div class="custom-select">
-                    <select class="city" name="" id="">
-                      <option value="1">New York</option>
-                      <option value="1">Wagshinton</option>
-                      <option value="1">Elnemsa</option>
-                    </select>
-                    <i class="icon-arrow-down"></i>
-                  </div>
-                </div>
-                <div class="zip-code">
-                  <label for="">Zip code <span class="asterisk">*</span></label>
-                  <input type="text" class="zip" />
-                  <div class="alert alert-zip">This Field Can't be empty</div>
+            <input type="text" placeholder="Appartment, suit, unit, etc (optional)" />
+            <label>Town/city <span class="asterisk">*</span></label>
+            <input type="text" class="town" />
+            <div class="alert alert-town">This Field Can't be empty</div>
+            <div class="Province-container">
+              <div class="province">
+                <label>Province <span class="asterisk">*</span></label>
+                <div class="custom-select">
+                  <select class="city" name="" id="">
+                    <option value="1">New York</option>
+                    <option value="1">Wagshinton</option>
+                    <option value="1">Elnemsa</option>
+                  </select>
+                  <i class="icon-arrow-down"></i>
                 </div>
               </div>
-              <div class="checkbox">
-                <input type="checkbox" id="test1" />
-                <label for="test1" class="label-check"
-                  >Ship to another address</label
-                >
+              <div class="zip-code">
+                <label for="">Zip code <span class="asterisk">*</span></label>
+                <input class="input-zip" maxlength="5" type="text" class="zip" />
+                <div class="alert alert-zip">This Field Can't be empty</div>
               </div>
-              <!-- Start Payment -->
-              <section class="payment">
-                <h2 class="text-uppercase">payment methods</h2>
-                <div class="credit-payment">
-                  <div class="card">
-                    <input type="radio" name="method" id="card" checked />
-                    <label class="label-radio" for="card">credit card</label>
-                  </div>
-                  <div class="credit-imgs">
-                    <img src="imgs/checkout/mastercart.png" alt="" />
-                    <img src="imgs/checkout/visa.png" alt="" />
-                    <img src="imgs/checkout/americanEpress.png" alt="" />
-                  </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="test1" />
+              <label for="test1" class="label-check">Ship to another address</label>
+            </div>
+            <!-- Start Payment -->
+            <section class="payment">
+              <h2 class="text-uppercase">payment methods</h2>
+              <div class="credit-payment">
+                <div class="card">
+                  <input type="radio" name="method" id="card" />
+                  <label class="label-radio" for="card">credit card</label>
                 </div>
+                <div class="credit-imgs">
+                  <img class="master" src="imgs/checkout/mastercart.png" alt="" />
+                  <img class="visa" src="imgs/checkout/visa.png" alt="" />
+                  <img class="american" src="imgs/checkout/americanEpress.png" alt="" />
+                </div>
+              </div>
+              <div class="card-info">
                 <label>credit number <span class="asterisk">*</span></label>
-                <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" />
+                <input class="input-card-number" type="text" placeholder="xxxx-xxxx-xxxx-xxxx" />
                 <div class="card-detail">
                   <div class="name">
                     <label>name on card <span class="asterisk">*</span></label>
@@ -162,145 +151,157 @@
                   </div>
                   <div class="date">
                     <label>Exp. date <span class="asterisk">*</span></label>
-                    <input
-                      class="input-date"
-                      type="text"
-                      placeholder="MM / YY"
-                    />
+                    <input class="input-date" type="text" placeholder="MM / YY" />
                   </div>
                   <div class="cvc">
                     <label>CVC/CVV <span class="asterisk">*</span></label>
-                    <input type="text" placeholder="•••" />
+                    <input class="input-cvc" type="text" maxlength="3" placeholder="•••" />
                   </div>
                 </div>
-                <div class="paypal-payment">
-                  <div class="card">
-                    <input type="radio" name="method" id="paypal" />
-                    <label class="label-radio" for="paypal">paypal</label>
-                  </div>
-                  <div class="credit-imgs">
-                    <img src="imgs/checkout/paypal.png" alt="" />
-                  </div>
+              </div>
+              <div class="paypal-payment">
+                <div class="card">
+                  <input type="radio" name="method" id="paypal" />
+                  <label class="label-radio" for="paypal">paypal</label>
                 </div>
-                <div class="complete-order">
-                  <div class="left">
-                    <a href="shoppingCart.html">
-                      <i class="icon-long-arrow-left"></i>
-                      return to cart
-                    </a>
-                  </div>
-                  <div class="right">
-                    <a class="button" href="order.html">complete order</a>
-                  </div>
+                <div class="credit-imgs">
+                  <img src="imgs/checkout/paypal.png" alt="" />
                 </div>
-              </section>
-              <!-- End Payment -->
-            </form>
+              </div>
+              <div class="complete-order">
+                <div class="left">
+                  <a href="shoppingCart.html">
+                    <i class="icon-long-arrow-left"></i>
+                    return to cart
+                  </a>
+                </div>
+                <div class="right">
+                  <a class="button" href="order.html">complete order</a>
+                </div>
+              </div>
+            </section>
+            <!-- End Payment -->
+          </form>
+        </div>
+        <div class="order">
+          <h2 class="text-uppercase">order</h2>
+          <div class="order-details">
+            <div class="product-title">product</div>
+            <div class="producd-total">total</div>
           </div>
-          <div class="order">
-            <h2 class="text-uppercase">order</h2>
-            <div class="order-details">
-              <div class="product-title">product</div>
-              <div class="producd-total">total</div>
+          <div class="items">
+            <div class="item">
+              <div class="productName">CBD Tincture 30ml</div>
+              <div class="productPrice">$44.99</div>
             </div>
-            <div class="items">
-              <div class="item">
-                <div class="productName">CBD Tincture 30ml</div>
-                <div class="productPrice">$44.99</div>
-              </div>
-              <div class="item">
-                <div class="productName">CBD isolate powder x2</div>
-                <div class="productPrice">$64.99</div>
-              </div>
-              <div class="item">
-                <div class="productName">CBD Tincture Pet 30ml</div>
-                <div class="productPrice">$84.99</div>
-              </div>
+            <div class="item">
+              <div class="productName">CBD isolate powder x2</div>
+              <div class="productPrice">$64.99</div>
             </div>
-            <div class="the-subtotal">
-              <div class="subtotal-container">
-                <div class="subtotal">subtotal</div>
-                <div class="value">$194.97</div>
-              </div>
-              <div class="shipping-container">
-                <div class="shipping">shipping</div>
-                <div class="value">Free</div>
-              </div>
+            <div class="item">
+              <div class="productName">CBD Tincture Pet 30ml</div>
+              <div class="productPrice">$84.99</div>
             </div>
-            <div class="total-container">
-              <div class="total">total</div>
-              <div class="value">$194.79</div>
+          </div>
+          <div class="the-subtotal">
+            <div class="subtotal-container">
+              <div class="subtotal">subtotal</div>
+              <div class="value">$194.97</div>
             </div>
+            <div class="shipping-container">
+              <div class="shipping">shipping</div>
+              <div class="value">Free</div>
+            </div>
+          </div>
+          <div class="total-container">
+            <div class="total">total</div>
+            <div class="value">$194.79</div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Checkout -->
+    </div>
+  </section>
+  <!-- End Checkout -->
 
-    <!-- Start Footer -->
-    <footer>
-      <div class="my-container">
-        <div class="footer-content">
-          <div class="newsletter">
-            <div class="get-latest">
-              <h5 class="text-uppercase">get latest news &amp; updates</h5>
-              <input
-                type="email"
-                name="email"
-                autocomplete="off"
-                placeholder="enter your email address here..."
-              />
-            </div>
-            <div class="subscribe">
-              <input
-                class="button"
-                type="submit"
-                value="subscribe now!"
-                name="submit"
-              />
-            </div>
+  <!-- Start Footer -->
+  <footer>
+    <div class="my-container">
+      <div class="footer-content">
+        <div class="newsletter">
+          <div class="get-latest">
+            <h5 class="text-uppercase">get latest news &amp; updates</h5>
+            <input type="email" name="email" autocomplete="off" placeholder="enter your email address here..." />
           </div>
-          <div class="footer-nav">
-            <div class="logo">
-              <a href="index.html"><img src="imgs/logo.png" alt="logo"/></a>
-            </div>
-            <ul class="my-navbar">
-              <li><a href="#">faqs</a></li>
-              <li><a href="products.html">products</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-            <div class="social">
-              <a href="#">
-                <i class="icon-facebook"></i>
-              </a>
-              <a href="#">
-                <i class="icon-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="icon-instagram"></i>
-              </a>
-              <div class="line"></div>
-            </div>
+          <div class="subscribe">
+            <input class="button" type="submit" value="subscribe now!" name="submit" />
           </div>
-          <div class="copyright">
-            <div class="left">
-              &copy; Copyrights Okanagan - 2019. All rights reserved
-            </div>
-            <div class="right">
-              <a href="#">Privacy Policy</a>|
-              <a href="#">Terms of Use</a>
-            </div>
+        </div>
+        <div class="footer-nav">
+          <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="logo" /></a>
+          </div>
+          <ul class="my-navbar">
+            <li><a href="#">faqs</a></li>
+            <li><a href="products.html">products</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+          <div class="social">
+            <a href="#">
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="icon-instagram"></i>
+            </a>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="left">
+            &copy; Copyrights Okanagan - 2019. All rights reserved
+          </div>
+          <div class="right">
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms of Use</a>
           </div>
         </div>
       </div>
-      <div class="footer-image"></div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+    <div class="footer-image"></div>
+  </footer>
+  <!-- End Footer -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/select2.min.js"></script>
-    <script src="js/cleave.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/cleave.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(function () {
+      $(".country, .city").select2();
+    });
+    var cleaveDate = new Cleave('.input-date', {
+      date: true,
+      datePattern: ['m', 'y']
+    });
+
+    var cleaveCard = new Cleave('.input-card-number', {
+      creditCard: true,
+      delimiter: '-'
+    });
+
+    var cleaveZip = new Cleave('.input-zip', {
+      numeral: true,
+      numeralThousandsGroupStyle: "none"
+    });
+
+    var cleaveCvc = new Cleave('.input-cvc', {
+      numeral: true,
+      numeralThousandsGroupStyle: "none"
+    });
+  </script>
+</body>
+
 </html>

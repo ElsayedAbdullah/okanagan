@@ -1,236 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Products</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/fontello.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
-    <!-- Start Header -->
-    <header>
-      <div class="my-container">
-        <div class="logo">
-          <a href="index.html"><img src="imgs/header-logo.png" alt="logo"/></a>
-        </div>
-        <button class="burgor">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-        <ul class="my-navbar">
-          <li><a href="index.html">home</a></li>
-          <li><a href="products.html">products</a></li>
-          <li class="hidden-sm"><a href="#">blog</a></li>
-          <li class="hidden-sm"><a href="#">faqs</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="#">contact</a></li>
-          <li class="user hidden-xs">
-            <a href="#">
-              <i class="icon-user"></i>
-            </a>
-          </li>
-          <li class="basket hidden-xs">
-            <a href="shoppingCart.html">
-              <i class="icon-basket"></i>
-            </a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Products</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/fontello.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="my-container">
+      <div class="logo">
+        <a href="index.html"><img src="imgs/header-logo.png" alt="logo" /></a>
       </div>
-    </header>
-    <!-- End  Header -->
+      <button class="burgor">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <ul class="my-navbar">
+        <li><a href="index.html">home</a></li>
+        <li><a href="products.html">products</a></li>
+        <li class="hidden-sm"><a href="#">blog</a></li>
+        <li class="hidden-sm"><a href="#">faqs</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li class="user hidden-xs">
+          <a href="#">
+            <i class="icon-user"></i>
+          </a>
+        </li>
+        <li class="basket hidden-xs">
+          <a href="shoppingCart.html">
+            <i class="icon-basket"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- End  Header -->
 
-    <!-- Start Hero Image -->
-    <section class="cart-hero-image">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item text-uppercase active">cart</li>
-          <li class="breadcrumb-item text-uppercase">checkout</li>
-          <li class="breadcrumb-item text-uppercase">finish</li>
-        </ol>
-      </nav>
-    </section>
-    <!-- End Hero Image -->
+  <!-- Start Hero Image -->
+  <section class="cart-hero-image">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item text-uppercase active">cart</li>
+        <li class="breadcrumb-item text-uppercase">checkout</li>
+        <li class="breadcrumb-item text-uppercase">finish</li>
+      </ol>
+    </nav>
+  </section>
+  <!-- End Hero Image -->
 
-    <!-- Start prodcucts Table -->
-    <section class="product-table">
-      <div class="my-container">
-        <table>
-          <thead>
-            <tr>
-              <th colspan="3">product</th>
-              <th class="product-price">price</th>
-              <th class="product-quantity">quantity</th>
-              <th class="product-total">total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="item">
-              <td class="product-remove"><i class="icon-close"></i></td>
-              <td class="product-thumbnail">
-                <img src="imgs/shoppingCart/hempoil.png" alt="" />
-              </td>
-              <td class="product-name">CBD Tincture 30ml</td>
-              <td class="product-price">44.99</td>
-              <td class="product-quantity">
-                <div class="quantity-container">
-                  <div class="quantity">
-                    <span class="minus button">-</span>
-                    <input
-                      class="number"
-                      type="number"
-                      min="1"
-                      step="1"
-                      value="1"
-                    />
-                    <span class="plus button">+</span>
-                  </div>
+  <!-- Start prodcucts Table -->
+  <section class="product-table">
+    <div class="my-container">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">product</th>
+            <th class="product-price">price</th>
+            <th class="product-quantity">quantity</th>
+            <th class="product-total">total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="item">
+            <td class="product-remove"><i class="icon-close"></i></td>
+            <td class="product-thumbnail">
+              <img src="imgs/shoppingCart/hempoil.png" alt="" />
+            </td>
+            <td class="product-name">CBD Tincture 30ml</td>
+            <td class="product-price">44.99</td>
+            <td class="product-quantity">
+              <div class="quantity-container">
+                <div class="quantity">
+                  <span class="minus button">-</span>
+                  <input class="number" type="number" min="1" step="1" value="1" />
+                  <span class="plus button">+</span>
                 </div>
-              </td>
-              <td class="product-total">44.99</td>
-            </tr>
-            <tr class="item">
-              <td class="product-remove"><i class="icon-close"></i></td>
-              <td class="product-thumbnail">
-                <img src="imgs/shoppingCart/hempoil2.png" alt="" />
-              </td>
-              <td class="product-name">CBD Isolate Powder</td>
-              <td class="product-price">64.99</td>
-              <td class="product-quantity">
-                <div class="quantity-container">
-                  <div class="quantity">
-                    <span class="minus button">-</span>
-                    <input
-                      class="number"
-                      type="number"
-                      min="1"
-                      step="1"
-                      value="1"
-                    />
-                    <span class="plus button">+</span>
-                  </div>
+              </div>
+            </td>
+            <td class="product-total">44.99</td>
+          </tr>
+          <tr class="item">
+            <td class="product-remove"><i class="icon-close"></i></td>
+            <td class="product-thumbnail">
+              <img src="imgs/shoppingCart/hempoil2.png" alt="" />
+            </td>
+            <td class="product-name">CBD Isolate Powder</td>
+            <td class="product-price">64.99</td>
+            <td class="product-quantity">
+              <div class="quantity-container">
+                <div class="quantity">
+                  <span class="minus button">-</span>
+                  <input class="number" type="number" min="1" step="1" value="1" />
+                  <span class="plus button">+</span>
                 </div>
-              </td>
-              <td class="product-total">64.99</td>
-            </tr>
-            <tr class="item">
-              <td class="product-remove"><i class="icon-close"></i></td>
-              <td class="product-thumbnail">
-                <img src="imgs/shoppingCart/hempoil3.png" alt="" />
-              </td>
-              <td class="product-name">CBD Tincture pet 30ml</td>
-              <td class="product-price">84.99</td>
-              <td class="product-quantity">
-                <div class="quantity-container">
-                  <div class="quantity">
-                    <span class="minus button">-</span>
-                    <input
-                      class="number"
-                      type="number"
-                      min="1"
-                      step="1"
-                      value="1"
-                    />
-                    <span class="plus button">+</span>
-                  </div>
+              </div>
+            </td>
+            <td class="product-total">64.99</td>
+          </tr>
+          <tr class="item">
+            <td class="product-remove"><i class="icon-close"></i></td>
+            <td class="product-thumbnail">
+              <img src="imgs/shoppingCart/hempoil3.png" alt="" />
+            </td>
+            <td class="product-name">CBD Tincture pet 30ml</td>
+            <td class="product-price">84.99</td>
+            <td class="product-quantity">
+              <div class="quantity-container">
+                <div class="quantity">
+                  <span class="minus button">-</span>
+                  <input class="number" type="number" min="1" step="1" value="1" />
+                  <span class="plus button">+</span>
                 </div>
-              </td>
-              <td class="product-total">84.99</td>
-            </tr>
-            <tr class="actions">
-              <td colspan="6">
-                <div class="update">
-                  <button>update cart</button>
-                </div>
-                <div class="subtotal">
-                  <p>subtotal:</p>
-                  <span>$259.96</span>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </div>
+            </td>
+            <td class="product-total">84.99</td>
+          </tr>
+          <tr class="actions">
+            <td colspan="6">
+              <div class="update">
+                <button>update cart</button>
+              </div>
+              <div class="subtotal">
+                <p>subtotal:</p>
+                <span>$259.96</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-        <div class="continue-shopping">
-          <div class="left">
-            <a href="index.html">
-              <i class="icon-long-arrow-left"></i>
-              continue shopping
+      <div class="continue-shopping">
+        <div class="left">
+          <a href="index.html">
+            <i class="icon-long-arrow-left"></i>
+            continue shopping
+          </a>
+        </div>
+        <div class="right">
+          <a class="button" href="checkout.html">proceed to checkout</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End prodcucts Table -->
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="my-container">
+      <div class="footer-content">
+        <div class="newsletter">
+          <div class="get-latest">
+            <h5 class="text-uppercase">get latest news &amp; updates</h5>
+            <input type="email" name="email" autocomplete="off" placeholder="enter your email address here..." />
+          </div>
+          <div class="subscribe">
+            <input class="button" type="submit" value="subscribe now!" name="submit" />
+          </div>
+        </div>
+        <div class="footer-nav">
+          <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="logo" /></a>
+          </div>
+          <ul class="my-navbar">
+            <li><a href="#">faqs</a></li>
+            <li><a href="products.html">products</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+          <div class="social">
+            <a href="#">
+              <i class="icon-facebook"></i>
             </a>
+            <a href="#">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="icon-instagram"></i>
+            </a>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="left">
+            &copy; Copyrights Okanagan - 2019. All rights reserved
           </div>
           <div class="right">
-            <a class="button" href="checkout.html">proceed to checkout</a>
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms of Use</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End prodcucts Table -->
+    </div>
+    <div class="footer-image"></div>
+  </footer>
+  <!-- End Footer -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
-    <!-- Start Footer -->
-    <footer>
-      <div class="my-container">
-        <div class="footer-content">
-          <div class="newsletter">
-            <div class="get-latest">
-              <h5 class="text-uppercase">get latest news &amp; updates</h5>
-              <input
-                type="email"
-                name="email"
-                autocomplete="off"
-                placeholder="enter your email address here..."
-              />
-            </div>
-            <div class="subscribe">
-              <input
-                class="button"
-                type="submit"
-                value="subscribe now!"
-                name="submit"
-              />
-            </div>
-          </div>
-          <div class="footer-nav">
-            <div class="logo">
-              <a href="index.html"><img src="imgs/logo.png" alt="logo"/></a>
-            </div>
-            <ul class="my-navbar">
-              <li><a href="#">faqs</a></li>
-              <li><a href="products.html">products</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-            <div class="social">
-              <a href="#">
-                <i class="icon-facebook"></i>
-              </a>
-              <a href="#">
-                <i class="icon-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="icon-instagram"></i>
-              </a>
-              <div class="line"></div>
-            </div>
-          </div>
-          <div class="copyright">
-            <div class="left">
-              &copy; Copyrights Okanagan - 2019. All rights reserved
-            </div>
-            <div class="right">
-              <a href="#">Privacy Policy</a>|
-              <a href="#">Terms of Use</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-image"></div>
-    </footer>
-    <!-- End Footer -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
 </html>
