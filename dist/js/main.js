@@ -18,13 +18,71 @@ $(function() {
   });
 
   // switch between tabs in live-product section
-  $(".live-list li").on("click", function() {
+  $(".live-content .live-list li").on("click", function() {
     $(this)
       .addClass("active")
       .siblings()
       .removeClass("active");
     $(".list-content > div").hide();
     $($(this).data("content")).fadeIn();
+  });
+  $(".live-list .item li").on("click", function() {
+    $(this)
+      .addClass("active")
+      .parents(".owl-item")
+      .siblings()
+      .find(".item li")
+      .removeClass("active");
+    $(".list-content > div").hide();
+    $($(this).data("content")).fadeIn();
+  });
+
+  $("#slider-one").owlCarousel({
+    dots: false,
+    nav: false,
+    loop: true,
+    stagePadding: 20,
+    margin: 15,
+    navRewind: false,
+    responsive: {
+      0: {
+        items: 1.8,
+        stagePadding: 15
+      },
+      500: {
+        items: 1.8
+      }
+    }
+  });
+  $("#slider-two").owlCarousel({
+    dots: true,
+    dotsEach: true,
+    nav: false,
+    loop: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1.35
+      },
+      500: {
+        items: 1.8
+      }
+    }
+  });
+  $("#slider-three").owlCarousel({
+    dots: false,
+    dotsEach: false,
+    nav: false,
+    loop: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1.23
+      },
+      500: {
+        items: 1.8
+      }
+    }
   });
 
   // switch between tabs in description section in products page
