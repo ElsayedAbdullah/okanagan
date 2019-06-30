@@ -12,9 +12,10 @@ $(function() {
   });
 
   //burgor button
-  $(".burgor").on("click", function() {
-    $(this).toggleClass("transformed");
-    $(".my-navbar").slideToggle(600);
+  $(".navbar .burgor").on("click", function() {
+    $(this).toggleClass("active");
+    $(this).toggleClass("not-active");
+    $("html,body").toggleClass("overlay");
   });
 
   // switch between tabs in live-product section
@@ -26,28 +27,29 @@ $(function() {
     $(".list-content > div").hide();
     $($(this).data("content")).fadeIn();
   });
-  $(".live-list .item li").on("click", function() {
+
+  $(".live-list.mobile-show .item li").on("click", function() {
     $(this)
       .addClass("active")
       .parents(".owl-item")
       .siblings()
       .find(".item li")
       .removeClass("active");
-    $(".list-content > div").hide();
+    $(".list-content.mobile-show > div").hide();
     $($(this).data("content")).fadeIn();
   });
 
   $("#slider-one").owlCarousel({
     dots: false,
     nav: false,
-    loop: true,
-    stagePadding: 20,
-    margin: 15,
-    navRewind: false,
+    loop: false,
+    margin: 70,
+    autoWidth: true,
+    stagePadding: 30,
     responsive: {
       0: {
-        items: 1.8,
-        stagePadding: 15
+        items: 1.4,
+        stagePadding: 30
       },
       500: {
         items: 1.8
@@ -93,49 +95,6 @@ $(function() {
       .removeClass("active");
     $(".description-content > div").hide();
     $($(this).data("content")).fadeIn();
-  });
-
-  //traverse between testimonials
-  $(".right-arrow").click(function(e) {
-    e.preventDefault();
-    if (!$(".slider .active").is(":last-child")) {
-      $(".slider .active").fadeOut(1000, function() {
-        $(".slider .active")
-          .removeClass("active")
-          .next(".client")
-          .addClass("active")
-          .fadeIn();
-      });
-    } else {
-      $(".slider .active").fadeOut(1000, function() {
-        $(".slider .active").removeClass("active");
-        $(".slider .client")
-          .eq(0)
-          .addClass("active")
-          .fadeIn();
-      });
-    }
-  });
-
-  $(".left-arrow").click(function(e) {
-    e.preventDefault();
-    if (!$(".slider .active").is(":first-child")) {
-      $(".slider .active").fadeOut(1000, function() {
-        $(".slider .active")
-          .removeClass("active")
-          .prev(".client")
-          .addClass("active")
-          .fadeIn();
-      });
-    } else {
-      $(".slider .active").fadeOut(1000, function() {
-        $(".slider .active").removeClass("active");
-        $(".slider .client")
-          .eq(3)
-          .addClass("active")
-          .fadeIn();
-      });
-    }
   });
 
   // Start Gallery in products page

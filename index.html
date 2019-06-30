@@ -20,38 +20,39 @@
 <body class="home">
   <!-- Start Header -->
   <header>
-    <div class="my-container">
-      <div class="my-nav">
-        <div class="logo">
-          <a href="index.html"><img src="imgs/header-logo.png" alt="logo" /></a>
-        </div>
-        <button class="burgor d-sm-none d-inline-block">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button class="burgor not-active navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
+          <span class="two"></span>
+          <span class="three"></span>
         </button>
-        <div class="my-nav-container">
-          <ul class="my-navbar d-sm-block d-none">
-            <li><a class="active" href="index.html">home</a></li>
-            <li><a href="products.html">products</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">faqs</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="#">contact</a></li>
-            <li class="user">
-              <a href="#">
-                <i class="icon-user"></i>
-              </a>
-            </li>
-          </ul>
-          <li class="basket d-inline-block">
-            <a href="shoppingCart.html">
-              <i class="icon-basket"></i>
-            </a>
-          </li>
+        <a class="navbar-brand logo" href="index.html">
+          <img src="imgs/header-logo.png" alt="logo" />
+        </a>
+        <li class="basket d-inline-block order-md-2">
+          <a href="#!">
+            <i class="icon-basket"></i>
+          </a>
+        </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html">home</a></li>
+              <li class="nav-item"><a href="#!">products</a></li>
+              <li class="nav-item"><a href="#!">blog</a></li>
+              <li class="nav-item"><a href="#!">faqs</a></li>
+              <li class="nav-item"><a href="#!">about</a></li>
+              <li class="nav-item"><a href="#!">contact</a></li>
+              <li class="user nav-item">
+                <a href="#!">
+                  <i class="icon-user"></i>
+                </a>
+              </li>
+          </ul>  
         </div>
+        
       </div>
-    </div>
+    </nav>
   </header>
   <!-- End  Header -->
 
@@ -64,22 +65,22 @@
             <img src="imgs/biglogo.png" alt="logo" />
           </div>
           <h1 class="text-uppercase">a quality you can feel</h1>
-          <a href="#" class="button">shop now!</a>
+          <a href="#!" class="button">shop now!</a>
           <div class="social-icons">
-            <a href="#">
+            <a href="#!">
               <i class="icon-facebook"></i>
             </a>
-            <a href="#">
+            <a href="#!">
               <i class="icon-twitter"></i>
             </a>
-            <a href="#">
+            <a href="#!">
               <i class="icon-instagram"></i>
             </a>
             <div class="line"></div>
           </div>
         </div>
         <div class="product-image">
-          <img src="imgs/Products.png" alt="" />
+          <img src="imgs/Products.png" class="wow fadeInUp" data-wow-duration="2s" alt="" />
         </div>
         <div class="clearfix"></div>
       </div>
@@ -106,8 +107,8 @@
         </li>
       </ul>
       <div class="container">
-        <div class="d-block d-md-none live-list">
-          <div class="owl-carousel owl-theme" id="slider-one">
+        <div class="d-block d-md-none live-list mobile-show">
+          <div class="owl-carousel owl-theme pl-3" id="slider-one">
             <div class="item">
               <li class="active text-center text-uppercase" data-content=".content-one">
                 live organic
@@ -150,7 +151,7 @@
               so we know how ingredients are carefully transformed into final
               products.
             </p>
-            <a href="#" class="button">our full story</a>
+            <a href="#!" class="button">our full story</a>
             <div class="canada-img">
               <img src="imgs/svg/canada.svg" alt="" />
             </div>
@@ -161,7 +162,7 @@
           Hello, how are you? nice to meet you!
         </div>
         <div class="content-three text-center">
-          Hello, I'm very Well, What about you?
+          Welcome, I'm very Well, What about you?
         </div>
         <div class="content-four text-center">
           nice, thanks for you. Good Bye!!
@@ -184,7 +185,7 @@
           <h4 class="text-center text-uppercase">hemp cbd oil</h4>
           <div class="cart">
             <span class="price text-center">$75</span>
-            <a class="text-uppercase" href="#">add to cart</a>
+            <a class="text-uppercase" href="#!">add to cart</a>
           </div>
         </div>
         <div class="product">
@@ -195,7 +196,7 @@
           <h4 class="text-center text-uppercase">cbd isolate powder</h4>
           <div class="cart">
             <span class="price text-center">$35</span>
-            <a class="text-uppercase" href="#">add to cart</a>
+            <a class="text-uppercase" href="#!">add to cart</a>
           </div>
         </div>
         <div class="product">
@@ -206,7 +207,7 @@
           <h4 class="text-center text-uppercase">cbd pet oil</h4>
           <div class="cart">
             <span class="price text-center">$49</span>
-            <a class="text-uppercase" href="#">add to cart</a>
+            <a class="text-uppercase" href="#!">add to cart</a>
           </div>
         </div>
       </div>
@@ -220,10 +221,10 @@
             <h4 class="text-center text-uppercase">hemp cbd oil</h4>
             <div class="cart">
               <span class="price text-center">$75</span>
-              <a class="text-uppercase" href="#">add to cart</a>
+              <a class="text-uppercase" href="#!">add to cart</a>
             </div>
           </div>
-          <div class="product">
+          <div class="product p-powder">
             <img class="powder" src="imgs/powder.png" alt="" />
             <div class="review">
               <img src="imgs/svg/stars.svg" alt="">
@@ -231,7 +232,7 @@
             <h4 class="text-center text-uppercase">cbd isolate powder</h4>
             <div class="cart">
               <span class="price text-center">$35</span>
-              <a class="text-uppercase" href="#">add to cart</a>
+              <a class="text-uppercase" href="#!">add to cart</a>
             </div>
           </div>
           <div class="product">
@@ -242,7 +243,7 @@
             <h4 class="text-center text-uppercase">cbd pet oil</h4>
             <div class="cart">
               <span class="price text-center">$49</span>
-              <a class="text-uppercase" href="#">add to cart</a>
+              <a class="text-uppercase" href="#!">add to cart</a>
             </div>
           </div>
         </div>
@@ -257,7 +258,7 @@
       <h2 class="text-center text-uppercase">why you will love us</h2>
       <div class="features">
         <div class="feat one">
-          <span>01</span>
+          <span class="wow fadeInUp" data-wow-duration="2s">01</span>
           <div>
             <h3 class="text-uppercase">train hard. <br />recover fast</h3>
             <p>
@@ -271,7 +272,7 @@
           <img src="imgs/Bed.png" alt="" />
         </div>
         <div class="feat two">
-          <span>02</span>
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5">02</span>
           <div>
             <h3 class="text-uppercase">reduce inflammation. <br />restore mobility.</h3>
             <p>
@@ -282,7 +283,7 @@
           </div>
         </div>
         <div class="feat three">
-          <span>03</span>
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1">03</span>
           <div>
             <h3 class="text-uppercase">reduce stress. <br />improve your mood.</h3>
             <p>
@@ -295,7 +296,7 @@
           <img src="imgs/holding.png" alt="" />
         </div>
         <div class="feat four">
-          <span>04</span>
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.3">04</span>
           <div>
             <h3 class="text-uppercase">support health & <br />well being</h3>
             <p>
@@ -315,15 +316,15 @@
     <div class="my-container">
       <div class="benefits">
         <div class="benefit">
-          <h2 class="text-uppercase">full spectrum hemp oil</h2>
+          <h2 class="text-uppercase wow fadeInUp" data-wow-duration="2s">full spectrum hemp oil</h2>
           <div class="advantages">
-            <img src="imgs/svg/non-thc.svg" alt="" />
-            <img src="imgs/svg/localgrown.svg" alt="" />
-            <img class="organic" src="imgs/svg/organic.svg" alt="" />
-            <img src="imgs/svg/nontoxic.svg" alt="" />
-            <img src="imgs/svg/nonartificial.svg" alt="" />
-            <img class="gmo" src="imgs/svg/non-gmo.svg" alt="" />
-            <img class="d-none d-md-inline-block" src="imgs/svg/canada-pro.svg" alt="" />
+            <img src="imgs/svg/non-thc.svg" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5" alt="" />
+            <img src="imgs/svg/localgrown.svg" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.7" alt="" />
+            <img class="organic wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.9" src="imgs/svg/organic.svg" alt="" />
+            <img src="imgs/svg/nontoxic.svg" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.1" alt="" />
+            <img src="imgs/svg/nonartificial.svg" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.3" alt="" />
+            <img class="gmo wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5" src="imgs/svg/non-gmo.svg" alt="" />
+            <img class="d-none d-md-inline-block wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.7" src="imgs/svg/canada-pro.svg" alt="" />
           </div>
         </div>
         <div class="benefit">
@@ -379,61 +380,72 @@
         <h3 class="text-center text-uppercase">What our Clients say</h3>
         <img class="quote" src="imgs/svg/quote.svg" alt="">
         <div class="slider">
-          <div class="client active">
-            <p>
-              Sed eu vulputate arcu. Mauris auctor suscipit tincidunt. Donec
-              at venenatis massa. Vivamus lobortis eros eget enim ullamcorper,
-              ac faucibus elit eleifend. Integer tristique, nisl ut gravida
-              tempor, felis nulla viverra velit, nec consectetur libero justo
-              vitae nulla.
-            </p>
-            <img src="imgs/svg/stars.svg" alt="" />
-            <span class="text-center">- Andrew Kramer</span>
-          </div>
-          <div class="client hidden">
-            <p>
-              Vivamus lobortis eros eget enim ullamcorper, ac faucibus elit
-              eleifend. Integer tristique, nisl ut gravida tempor, felis nulla
-              viverra velit, nec consectetur libero justo vitae nulla.
-            </p>
-            <img src="imgs/svg/stars.svg" alt="" />
-            <span>- John Smith</span>
-          </div>
-          <div class="client hidden">
-            <p>
-              Mauris auctor suscipit tincidunt. Donec at venenatis massa.
-              Vivamus lobortis eros eget enim ullamcorper, ac faucibus elit
-              eleifend. Integer tristique, nisl ut gravida tempor, felis nulla
-              viverra velit, nec consectetur libero justo vitae nulla.
-            </p>
-            <img src="imgs/svg/stars.svg" alt="" />
-            <span>- Steve Jobs</span>
-          </div>
-          <div class="client hidden">
-            <p>
-              Sed eu vulputate arcu. Mauris auctor suscipit tincidunt. Donec
-              at venenatis massa. Vivamus lobortis eros eget enim ullamcorper,
-              ac faucibus elit eleifend. Integer tristique, nisl ut gravida
-              tempor, felis nulla viverra velit, nec consectetur libero justo
-              vitae nulla.
-            </p>
-            <img src="imgs/svg/stars.svg" alt="" />
-            <span>- Jeff Bezos</span>
+          <div id="carouselTestim" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active client">
+                <div class="carousel-caption">
+                  <p>
+                    Sed eu vulputate arcu. Mauris auctor suscipit tincidunt. Donec
+                    at venenatis massa. Vivamus lobortis eros eget enim ullamcorper,
+                    ac faucibus elit eleifend. Integer tristique, nisl ut gravida
+                    tempor, felis nulla viverra velit, nec consectetur libero justo
+                    vitae nulla.
+                  </p>
+                  <img src="imgs/svg/stars.svg" alt="" />
+                  <span class="text-center">- Andrew Kramer</span>
+                </div>
+              </div>
+              <div class="carousel-item client">
+                <div class="carousel-caption">
+                  <p>
+                    Vivamus lobortis eros eget enim ullamcorper, ac faucibus elit
+                    eleifend. Integer tristique, nisl ut gravida tempor, felis nulla
+                    viverra velit, nec consectetur libero justo vitae nulla. Vivamus lobortis eros eget enim ullamcorper, ac faucibus elit eleifend.
+                  </p>
+                  <img src="imgs/svg/stars.svg" alt="" />
+                  <span>- John Smith</span>
+                </div>
+              </div>
+              <div class="carousel-item client">
+                <div class="carousel-caption">
+                  <p>
+                    Mauris auctor suscipit tincidunt. Donec at venenatis massa.
+                    Vivamus lobortis eros eget enim ullamcorper, ac faucibus elit
+                    eleifend. Integer tristique, nisl ut gravida tempor, felis nulla
+                    viverra velit, nec consectetur libero justo vitae nulla.
+                  </p>
+                  <img src="imgs/svg/stars.svg" alt="" />
+                  <span>- Steve Jobs</span>
+                </div>
+              </div>
+              <div class="carousel-item client">
+                <div class="carousel-caption">
+                  <p>
+                    Sed eu vulputate arcu. Mauris auctor suscipit tincidunt. Donec
+                    at venenatis massa. Vivamus lobortis eros eget enim ullamcorper,
+                    ac faucibus elit eleifend. Integer tristique, nisl ut gravida
+                    tempor, felis nulla viverra velit, nec consectetur libero justo
+                    vitae nulla.
+                  </p>
+                  <img src="imgs/svg/stars.svg" alt="" />
+                  <span>- Jeff Bezos</span>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselTestim" role="button" data-slide="prev">
+              <svg width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 2L2 30L30 58" stroke="#A9B090" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="square" />
+              </svg>
+            </a>
+            <a class="carousel-control-next" href="#carouselTestim" role="button" data-slide="next">
+              <svg width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L30 30L2 58" stroke="#A9B090" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="square" />
+              </svg>
+            </a>
           </div>
         </div>
-
-        <a class="left-arrow" href="#">
-          <svg width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M30 2L2 30L30 58" stroke="#A9B090" stroke-width="2" stroke-miterlimit="10"
-              stroke-linecap="square" />
-          </svg>
-        </a>
-        <a class="right-arrow" href="#">
-          <svg width="32" height="60" viewBox="0 0 32 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 2L30 30L2 58" stroke="#A9B090" stroke-width="2" stroke-miterlimit="10"
-              stroke-linecap="square" />
-          </svg>
-        </a>
       </div>
     </div>
   </div>
@@ -446,29 +458,32 @@
       <h2 class="text-uppercase text-center">explore popular articles</h2>
       <div class="articles hidden-sm">
         <div class="article">
-          <img src="imgs/couple.png" alt="" />
-          <p>
-            Curabitur cursus, nibh id pellentesque facilisis, nunc erat
-            dignissim justo...
-          </p>
-          <a class="text-uppercase" href="#">read more</a>
-        </div>
-        <div class="article">
-          <img src="imgs/soil.png" alt="" />
-          <p>
-            Aenean fermentum est id lorem ultricies efficitur. Praesent nec
-            euismod quam...
-          </p>
-          <a class="text-uppercase" href="#">read more</a>
-        </div>
-        <div class="article">
-          <img src="imgs/table.png" alt="" />
-          <p>
-            Nullam elementum lectus vitae erat ultrices, sed ultrices lectus
-            commodo...
-          </p>
-          <a class="text-uppercase" href="#">read more</a>
-        </div>
+            <div class="one">
+            </div>
+            <p>
+              Curabitur cursus, nibh id pellentesque facilisis, nunc erat
+              dignissim justo...
+            </p>
+            <a class="text-uppercase" href="#!">read more</a>
+          </div>
+          <div class="article">
+            <div class="two">
+            </div>
+            <p>
+              Aenean fermentum est id lorem ultricies efficitur. Praesent nec
+              euismod quam...
+            </p>
+            <a class="text-uppercase" href="#!">read more</a>
+          </div>
+          <div class="article">
+            <div class="three">
+            </div>
+            <p>
+              Nullam elementum lectus vitae erat ultrices, sed ultrices lectus
+              commodo...
+            </p>
+            <a class="text-uppercase" href="#!">read more</a>
+          </div>
       </div>
       <div class="slider-container articles d-block d-md-none">
         <div class="owl-carousel owl-theme" id="slider-three">
@@ -513,18 +528,18 @@
     <div class="wholesale-content">
       <div class="left-content">
         <div class="owner">
-          <h4 class="text-uppercase">business owner?</h4>
-          <h2 class="text-uppercase">buy cbd products <br />wholesale</h2>
-          <p>
+          <h4 class="text-uppercase wow fadeInUp" data-wow-duration="2s">business owner?</h4>
+          <h2 class="text-uppercase wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5">buy cbd products <br />wholesale</h2>
+          <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.7">
             OKANAGAN CBD hemp oil makes a positive impact on energy levels and
             mood swings. It also reduces stress and anxiety levels.
           </p>
-          <a href="#" class="button">learn more</a>
+          <a href="#!" class="button wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.9">learn more</a>
         </div>
       </div>
       <div class="right-content">
         <div class="wholesale-imgs">
-          <img class="variation" src="imgs/variation.png" alt="" />
+          <img class="variation wow fadeInUp" data-wow-duration="2s" src="imgs/variation.png" alt="" />
         </div>
       </div>
       <div class="clearfix"></div>
@@ -550,19 +565,19 @@
             <a href="index.html"><img src="imgs/logo.png" alt="logo" /></a>
           </div>
           <ul class="my-navbar">
-            <li><a href="#">faqs</a></li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#!">faqs</a></li>
+            <li><a href="#!">products</a></li>
+            <li><a href="#!">blog</a></li>
+            <li><a href="#!">contact</a></li>
           </ul>
           <div class="social">
-            <a href="#">
+            <a href="#!">
               <i class="icon-facebook"></i>
             </a>
-            <a href="#">
+            <a href="#!">
               <i class="icon-twitter"></i>
             </a>
-            <a href="#">
+            <a href="#!">
               <i class="icon-instagram"></i>
             </a>
             <div class="line"></div>
@@ -573,8 +588,8 @@
             &copy; Copyrights Okanagan - 2019. All rights reserved
           </div>
           <div class="right">
-            <a href="#">Privacy Policy</a>|
-            <a href="#">Terms of Use</a>
+            <a href="#!">Privacy Policy</a>|
+            <a href="#!">Terms of Use</a>
           </div>
         </div>
       </div>
