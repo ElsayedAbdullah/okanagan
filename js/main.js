@@ -2,12 +2,10 @@ $(function() {
   "use strict";
 
   // add class active on navbar when click
-  $(".my-navbar li a").on("click", function() {
+  $(".navbar .navbar-nav .nav-item").on("click", function() {
     $(this)
       .addClass("active")
-      .parent("li")
       .siblings()
-      .find("a")
       .removeClass("active");
   });
 
@@ -43,7 +41,7 @@ $(function() {
     dots: false,
     nav: false,
     loop: false,
-    margin: 70,
+    margin: 50,
     autoWidth: true,
     stagePadding: 30,
     responsive: {
@@ -64,7 +62,7 @@ $(function() {
     margin: 20,
     responsive: {
       0: {
-        items: 1.35
+        items: 1.3
       },
       500: {
         items: 1.8
@@ -79,7 +77,7 @@ $(function() {
     margin: 20,
     responsive: {
       0: {
-        items: 1.23
+        items: 1.18
       },
       500: {
         items: 1.8
