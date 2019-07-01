@@ -990,7 +990,7 @@ header .navbar-nav li a i:hover {
 /* End Live-orgainc */
 /* Start Top Products */
 .top-products {
-  padding: 140px 0;
+  padding-bottom: 140px;
   background-color: #e3e8da;
   text-align: center;
   overflow: hidden;
@@ -1027,6 +1027,13 @@ header .navbar-nav li a i:hover {
   background-color: #ebf0e1;
   border: 1px solid #e2e7d3;
   padding-top: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.top-products .products .product:hover {
+  cursor: pointer;
+  border: 1px solid #d4d6ca;
 }
 
 .top-products .products .product .hempoil {
@@ -1344,6 +1351,7 @@ header .navbar-nav li a i:hover {
 .full-spectrum .benefits .benefit .advantages img {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 575px) {

@@ -10,10 +10,15 @@ $(function() {
   });
 
   //burgor button
-  $(".navbar .burgor").on("click", function() {
-    $(this).toggleClass("active");
-    $(this).toggleClass("not-active");
-    $("html,body").toggleClass("overlay");
+  $(".navbar .burgor").on("click", function(event) {
+    if (!event.detail || event.detail == 1) {
+      //activate on first click only to avoid hiding again on double clicks
+      $(this).toggleClass("active");
+      $(this).toggleClass("not-active");
+      $("body, html").toggleClass("overlay");
+      $(".navbar-collapse").slideToggle();
+    }
+    return false;
   });
 
   // switch between tabs in live-product section
@@ -41,7 +46,7 @@ $(function() {
     dots: false,
     nav: false,
     loop: false,
-    margin: 50,
+    margin: 30,
     autoWidth: true,
     stagePadding: 30,
     responsive: {
