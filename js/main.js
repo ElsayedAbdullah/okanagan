@@ -21,6 +21,19 @@ $(function() {
     return false;
   });
 
+  $("body").on("click", function(e) {
+    var $currEl = $(e.currentTarget);
+    if (!$currEl.is(".navbar") && !$currEl.closest(".navbar").length) {
+      $("html,body").removeClass("overlay");
+      $(".navbar .burgor").removeClass("active");
+      $(".navbar .burgor").removeClass("not-active");
+      $(".navbar-collapse").slideUp();
+    }
+  });
+  $(".navbar").on("click", function(e) {
+    e.stopPropagation();
+  });
+
   // switch between tabs in live-product section
   $(".live-content .live-list li").on("click", function() {
     $(this)
