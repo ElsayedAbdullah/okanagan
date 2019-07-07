@@ -26,7 +26,7 @@ $(function() {
     if (!$currEl.is(".navbar") && !$currEl.closest(".navbar").length) {
       $("html,body").removeClass("overlay");
       $(".navbar .burgor").removeClass("active");
-      $(".navbar .burgor").removeClass("not-active");
+      $(".navbar .burgor").addClass("not-active");
       $(".navbar-collapse").slideUp();
     }
   });
